@@ -243,8 +243,11 @@ h3 {
 }
 
 .quick-stats div {
-  min-height: 142px;
-  padding: 18px;
+  min-height: 158px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   background: rgba(255, 255, 255, 0.76);
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -257,20 +260,26 @@ h3 {
 
 .quick-stats strong {
   color: var(--ucr-blue);
+  min-height: 38px;
   font-size: 1.55rem;
+  line-height: 1;
 }
 
 .quick-stats span,
 .quick-stats small {
-  margin-top: 4px;
   color: var(--muted);
   font-size: 0.88rem;
   line-height: 1.42;
 }
 
+.quick-stats span {
+  min-height: 40px;
+  margin-top: 8px;
+}
+
 .quick-stats small {
   display: block;
-  margin-top: 10px;
+  margin-top: auto;
   color: var(--ucr-blue-dark);
   font-size: 0.8rem;
   font-weight: 700;
